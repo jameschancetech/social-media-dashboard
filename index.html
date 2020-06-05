@@ -1,88 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <div class="wrapper">
+    <div class="page-headings">
+      <h1>Social Media Dashboard</h1>
+      <h3>Total Followers: 23,004</h3>
+    </div>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <div class="toggle-button-container">
+      <p>Dark Mode</p>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
 
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+    <div class="top-row-grid">
+      <div class="top-row-box">
+        <p class='top-bar-social'>@nathanf</p>
+        <p class="top-bar-count">1987</p>
+        <p class="top-bar-followers">Followers</p>
+        <p class="top-bar-today-count">12 Today</p>
+      </div>
 
 
+      <div class="top-row-box">
+        <p class='top-bar-social'>@nathanf</p>
+        <p class="top-bar-count">1044</p>
+        <p class="top-bar-followers">Followers</p>
+        <p class="top-bar-today-count">99 Today</p>
+      </div>
 
-  Overview - Today
+      <div class="top-row-box">
+        <p class='top-bar-social'>@realnathanf</p>
+        <p class="top-bar-count">11k</p>
+        <p class="top-bar-followers">Followers</p>
+        <p class="top-bar-today-count">1099 Today</p>
+      </div>
 
-  Page Views
-  87
-  3%
+      <div class="top-row-box">
+        <p class='top-bar-social'>Nathan F.</p>
+        <p class="top-bar-count">8239</p>
+        <p class="top-bar-followers">Followers</p>
+        <p class="top-bar-today-count">144 Today</p>
+      </div>
+    </div>
 
-  Likes
-  52
-  2%
 
-  Likes
-  5462
-  2257%
+    <h3>Overview - Today</h3>
 
-  Profile Views
-  52k
-  1375%
+    <div class="bottom-row-grid">
+      <div class="bottom-row-box">
+        <p>Page Views</p>
+        <p>PH</p>
+        <p>87</p>
+        <p>3%</p>
+      </div>
 
-  Retweets
-  117
-  303%
+      <div class="bottom-row-box">
+        <p>Likes</p>
+        <p>PH</p>
+        <p>52</p>
+        <p>2%</p>
+      </div>
 
-  Likes
-  507
-  553%
+      <div class="bottom-row-box">
+        <p>Likes</p>
+        <p>PH</p>
+        <p>5462</p>
+        <p>2257%</p>
+      </div>
 
-  Likes
-  107
-  19%
+      <div class="bottom-row-box">
+        <p>Profile Views</p>
+        <p>PH</p>
+        <p>52k</p>
+        <p>1375%</p>
+      </div>
 
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <div class="bottom-row-box">
+        <p>Retweets</p>
+        <p>PH</p>
+        <p>117</p>
+        <p>303%</p>
+      </div>
+
+      <div class="bottom-row-box">
+        <p>Likes</p>
+        <p>PH</p>
+        <p>507</p>
+        <p>553%</p>
+      </div>
+
+      <div class="bottom-row-box">
+        <p>Likes</p>
+        <p>PH</p>
+        <p>107</p>
+        <p>19%</p>
+      </div>
+
+      <div class="bottom-row-box">
+        <p>Total Views</p>
+        <p>PH</p>
+        <p>1407</p>
+        <p>12%</p>
+      </div>
+    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.jameschance.co.uk">James Chance</a>.
+      </div>
+    </footer>
   </div>
   <script src="./index.js"></script>
 </body>
+
 </html>
