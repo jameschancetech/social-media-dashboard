@@ -6,12 +6,16 @@
   padding: 0;
 }
 
-:root {
-  --insta-border-color: linear-gradient(#fdc468, #df4996);
-}
-
 body, html {
   height: 95vh;
+}
+
+html {
+  background: hsl(0, 0%, 100%);
+}
+
+body {
+  background: linear-gradient(hsl(225, 100%, 98%) 35%, hsl(0, 0%, 100%) 35%);
 }
 
 .arrow {
@@ -24,10 +28,20 @@ body, html {
   height: 20px;
 }
 
+.green {
+  color: hsl(163, 72%, 41%)
+}
+
+.red {
+  color: hsl(356, 69%, 56%);
+}
+
 .wrapper {
   width: 1200px;
-  margin: 2em auto;
+  margin: 0 auto;
+  padding-top: 2em;
   height: 97vh;
+
 }
 
 .page-headings {
@@ -146,6 +160,10 @@ input:checked + .slider:before {
   border-radius: 2%;
 }
 
+.top-row-box:hover  {
+  background-color: hsl(230, 22%, 74%);
+}
+
 .inner-box-top-row {
   display: flex;
   justify-content: center;
@@ -161,7 +179,13 @@ input:checked + .slider:before {
 }
 
 .thegram-panel-top {
-  border-top: .25em solid var(--insta-border-color);
+  border-top: .25em solid;
+  border-image-source: linear-gradient(to-right, hsl(37, 97%, 70%) 0%, hsl(329, 70%, 58%));
+  border-image-slice: 1;
+}
+
+.youtube-panel-top {
+  border-top: .25em solid hsl(348, 97%, 39%);
 }
 
 .top-bar-social {
@@ -172,15 +196,7 @@ input:checked + .slider:before {
   color: hsl(230, 17%, 14%);
 }
 
-.top-bar-fb-logo {
-  display: inline-block;
-}
-
-.top-bar-twitter-logo {
-  display: inline-block;
-}
-
-.top-bar-thegram-logo {
+.social-logo {
   display: inline-block;
 }
 
@@ -204,7 +220,6 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: hsl(163, 72%, 41%);
 }
 
 .top-bar-today-count {
@@ -215,6 +230,12 @@ input:checked + .slider:before {
 
 
 /* BOTTOM GRID */
+
+.overview-heading {
+  margin-bottom: 1em;
+  color: hsl(228, 12%, 44%);
+  font-size: 1.2rem;
+}
 
 .bottom-row-grid {
   display: grid;
@@ -228,6 +249,11 @@ input:checked + .slider:before {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding: 2em;
+  border-radius: 2%;
+}
+
+.bottom-row-box:hover  {
+  background-color: hsl(230, 22%, 74%);
 }
 
 /* FOOTER */
