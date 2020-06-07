@@ -14,15 +14,20 @@
       <h1 class="top-heading">Social Media Dashboard</h1>
       <h3 class="sub-heading">Total Followers: 23,004</h3>
     </div>
+
     <div class="toggle-button-container">
       <p class="dark-mode-heading">Dark Mode</p>
-      <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-      </label>
-    </div>
-    <div class="top-row-grid">
 
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked="">
+        <label class="onoffswitch-label" for="myonoffswitch">
+          <span class="onoffswitch-inner"></span>
+          <span class="onoffswitch-switch"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="top-row-grid">
 
       <div class="top-row-box facebook-panel-top">
         <div class="inner-box-top-row">
@@ -85,62 +90,134 @@
     <div class="bottom-row-grid">
 
       <div class="bottom-row-box">
-        <p>Page Views</p>
-        <img src="/icon-facebook.db88fd38.svg" alt="facebook logo" class="svg-logo top-bar-fb-logo social-logo">
-        <p>87</p>
-        <p><span>▲</span>3%</p>
-      </div>
-
-
-      <div class="bottom-row-box">
-        <p>Likes</p>
-        <img src="/icon-facebook.db88fd38.svg" alt="facebook logo" class="svg-logo top-bar-fb-logo social-logo">
-        <p>52</p>
-        <p><span>▼</span>2%</p>
-      </div>
-
-      <div class="bottom-row-box">
-        <p>Likes</p>
-        <img src="/icon-instagram.55128b72.svg" alt="Instgram logo" class="svg-logo top-bar-thegram-logo social-logo">
-        <p>5462</p>
-        <p><span>▲</span>2257%</p>
+        <div class="bottom-grid-item-top page-views">
+          <p>Page Views</p>
+        </div>
+        <div class="social-img-bottom bottom-grid-item-top">
+          <img src="/icon-facebook.db88fd38.svg" alt="facebook logo" class="svg-logo top-bar-fb-logo social-logo">
+        </div>
+        <div class="bottom-row-count-number">
+          <p>87</p>
+        </div>
+        <div class="percent-change-bottom">
+          <p class="arrow green">▲</p>
+          <p class="top-bar-today-count green">3%</p>
+        </div>
       </div>
 
       <div class="bottom-row-box">
-        <p>Profile Views</p>
-        <img src="/icon-instagram.55128b72.svg" alt="Instgram logo" class="svg-logo top-bar-thegram-logo social-logo">
-        <p>52k</p>
-        <p><span>▲</span>1375%</p>
+        <div class="bottom-grid-item-top page-views">
+          <p>Likes</p>
+        </div>
+        <div class="social-img-bottom bottom-grid-item-top">
+          <img src="/icon-facebook.db88fd38.svg" alt="facebook logo" class="svg-logo top-bar-fb-logo social-logo">
+        </div>
+        <div class="bottom-row-count-number">
+          <p>52</p>
+        </div>
+        <div class="percent-change-bottom">
+          <p class="arrow red">▼</p>
+          <p class="top-bar-today-count red">2%</p>
+        </div>
       </div>
 
       <div class="bottom-row-box">
-        <p>Retweets</p>
-        <img src="/icon-twitter.9dcd00ee.svg" alt="twitter logo" class="svg-logo top-bar-twitter-logo social-logo">
-        <p>117</p>
-        <p><span>▲</span>303%</p>
+        <div class="bottom-grid-item-top page-views">
+          <p>Likes</p>
+        </div>
+        <div class="social-img-bottom bottom-grid-item-top">
+          <img src="/icon-instagram.55128b72.svg" alt="Instgram logo" class="svg-logo top-bar-thegram-logo social-logo">
+        </div>
+        <div class="bottom-row-count-number">
+          <p>5462</p>
+        </div>
+        <div class="percent-change-bottom">
+          <p class="arrow green">▲</p>
+          <p class="top-bar-today-count green">2257%</p>
+        </div>
       </div>
 
       <div class="bottom-row-box">
-        <p>Likes</p>
-        <img src="/icon-twitter.9dcd00ee.svg" alt="twitter logo" class="svg-logo top-bar-twitter-logo social-logo">
-        <p>507</p>
-        <p><span>▲</span>553%</p>
+        <div class="bottom-grid-item-top page-views">
+          <p>Profile Views</p>
+        </div>
+        <div class="social-img-bottom bottom-grid-item-top">
+          <img src="/icon-instagram.55128b72.svg" alt="Instgram logo" class="svg-logo top-bar-thegram-logo social-logo">
+        </div>
+        <div class="bottom-row-count-number">
+          <p>52k</p>
+        </div>
+        <div class="percent-change-bottom">
+          <p class="arrow green">▲</p>
+          <p class="top-bar-today-count green">1375%</p>
+        </div>
       </div>
 
       <div class="bottom-row-box">
-        <p>Likes</p>
-        <img src="/icon-youtube.8e30d3e6.svg" alt="YouTube logo" class="svg-logo top-bar-youtube-logo social-logo">
-        <p>107</p>
-        <p><span>▼</span>19%</p>
+        <div class="bottom-grid-item-top page-views">
+          <p>Retweets</p>
+        </div>
+        <div class="social-img-bottom bottom-grid-item-top">
+          <img src="/icon-twitter.9dcd00ee.svg" alt="twitter logo" class="svg-logo top-bar-twitter-logo social-logo">
+        </div>
+        <div class="bottom-row-count-number">
+          <p>117</p>
+        </div>
+        <div class="percent-change-bottom">
+          <p class="arrow green">▲</p>
+          <p class="top-bar-today-count green">303%</p>
+        </div>
       </div>
 
       <div class="bottom-row-box">
-        <p>Total Views</p>
-        <img src="/icon-youtube.8e30d3e6.svg" alt="YouTube logo" class="svg-logo top-bar-youtube-logo social-logo">
-        <p>1407</p>
-        <p><span>▼</span>12%</p>
+        <div class="bottom-grid-item-top page-views">
+          <p>Likes</p>
+        </div>
+        <div class="social-img-bottom bottom-grid-item-top">
+          <img src="/icon-twitter.9dcd00ee.svg" alt="twitter logo" class="svg-logo top-bar-twitter-logo social-logo">
+        </div>
+        <div class="bottom-row-count-number">
+          <p>507</p>
+        </div>
+        <div class="percent-change-bottom">
+          <p class="arrow green">▲</p>
+          <p class="top-bar-today-count green">553%</p>
+        </div>
+      </div>
+
+      <div class="bottom-row-box">
+        <div class="bottom-grid-item-top page-views">
+          <p>Likes</p>
+        </div>
+        <div class="social-img-bottom bottom-grid-item-top">
+          <img src="/icon-youtube.8e30d3e6.svg" alt="YouTube logo" class="svg-logo top-bar-youtube-logo social-logo">
+        </div>
+        <div class="bottom-row-count-number">
+          <p>107</p>
+        </div>
+        <div class="percent-change-bottom">
+          <p class="arrow red">▼</p>
+          <p class="top-bar-today-count red">19%</p>
+        </div>
+      </div>
+
+      <div class="bottom-row-box">
+        <div class="bottom-grid-item-top page-views">
+          <p>Total Views</p>
+        </div>
+        <div class="social-img-bottom bottom-grid-item-top">
+          <img src="/icon-youtube.8e30d3e6.svg" alt="YouTube logo" class="svg-logo top-bar-youtube-logo social-logo">
+        </div>
+        <div class="bottom-row-count-number">
+          <p>1407</p>
+        </div>
+        <div class="percent-change-bottom">
+          <p class="arrow red">▼</p>
+          <p class="top-bar-today-count red">12%</p>
+        </div>
       </div>
     </div>
+
     <footer>
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
@@ -152,12 +229,3 @@
 </body>
 
 </html>
-
-
-<!-- 
-
-  ▲
-  ▼
-
-
--->
