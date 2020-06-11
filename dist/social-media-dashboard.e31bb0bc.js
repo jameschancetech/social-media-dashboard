@@ -196,15 +196,38 @@ require("./index.css");
 
 var switchButton = document.querySelector(".onoffswitch-checkbox");
 var pageDivs = document.querySelectorAll(".box");
+var numberHeadings = document.querySelectorAll(".numbers");
+var bodyTag = document.querySelector('body');
+var htmlTag = document.querySelector('html');
+var socialHeading = document.querySelectorAll('.top-bar-social');
+
+function socialMediaHeadings() {
+  console.log('action');
+  socialHeading.forEach(function (f) {
+    f.classList.toggle('socialMediaHeadingsDark'); // f.classList.toggle('top-bar-social');
+
+    console.log(f);
+  });
+}
 
 function divToggle() {
-  pageDivs.forEach(function (e) {
-    e.classList.toggle('darkMode');
+  pageDivs.forEach(function (g) {
+    g.classList.toggle('darkModeCard');
+  });
+}
+
+function headingNumberToggle() {
+  numberHeadings.forEach(function (e) {
+    e.classList.toggle("headingNumbers");
   });
 }
 
 switchButton.addEventListener("click", function () {
   divToggle();
+  headingNumberToggle();
+  htmlTag.classList.toggle("htmlDark");
+  bodyTag.classList.toggle("bodyDark");
+  socialMediaHeadings();
 });
 },{"./index.css":"index.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -234,7 +257,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60346" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60108" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
