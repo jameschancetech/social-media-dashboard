@@ -11,8 +11,6 @@ function socialMediaHeadings() {
   console.log('action');
   socialHeading.forEach(f => {
     f.classList.toggle('socialMediaHeadingsDark');
-    // f.classList.toggle('top-bar-social');
-    console.log(f);
   });
 }
 

@@ -204,9 +204,7 @@ var socialHeading = document.querySelectorAll('.top-bar-social');
 function socialMediaHeadings() {
   console.log('action');
   socialHeading.forEach(function (f) {
-    f.classList.toggle('socialMediaHeadingsDark'); // f.classList.toggle('top-bar-social');
-
-    console.log(f);
+    f.classList.toggle('socialMediaHeadingsDark');
   });
 }
 
@@ -257,7 +255,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62202" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57197" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
